@@ -16,7 +16,7 @@ int _tmain(int argc, _TCHAR* argv[])
     bool bIsRightString = false;
     system("cls");
     printf("Input a binary number\r\n");
-    scanf("%[^\n]", &szLine1);
+    scanf("%[^\n]", szLine1);
     sscanf(szLine1, "%[0-1]", szLine2);
     nStrLen1 = strlen(szLine1);
     nStrLen2 = strlen(szLine2);
@@ -36,7 +36,7 @@ int _tmain(int argc, _TCHAR* argv[])
     }
     printf
     (
-    	"The decenary equavalent of the binary number %s is %d\r\n",
+    	"The decimal equavalent of the binary number %s is %d\r\n",
         szLine1, nBinNum
     );
     getchar();
