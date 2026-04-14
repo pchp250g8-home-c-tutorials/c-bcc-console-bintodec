@@ -8,9 +8,9 @@
 
 int _tmain(int argc, _TCHAR* argv[]) 
 {
-	const unsigned int nMaxBinDigits = (unsigned int)(floor(log2(UINT32_MAX)));
-    unsigned int nBinPower = 1;
-    unsigned int nBinNum = 0;
+	const unsigned int nMaxBinDigits = (unsigned int)(ceil(log2(UINT32_MAX)));
+    long long nBinPower = 1L;
+    long long nBinNum = 0L;
     char szLine1[256],szLine2[256];
     size_t nStrLen1,nStrLen2;
     bool bIsRightString = false;
@@ -36,7 +36,7 @@ int _tmain(int argc, _TCHAR* argv[])
     }
     printf
     (
-    	"The decimal equavalent of the binary number %s is %d\r\n",
+    	"The decimal equavalent of the binary number %s is %lld\r\n",
         szLine1, nBinNum
     );
     getchar();
